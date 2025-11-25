@@ -10,7 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^24.10.1",
+    "bitly-node-api": "^0.0.6",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1"
   }
 }
