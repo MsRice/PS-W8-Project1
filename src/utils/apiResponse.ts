@@ -60,11 +60,13 @@ export async function shortenUrl(longUrl: string): Promise<string> {
 }
 
 
-export async function builder(long_url: string): Promise<(url :string)=> string> {
+export async function builder(long_url: string):  Promise<(url :string)=> string> {
    
   const shortUrlResponse: string | null = await shortenUrl(long_url)
-  console.log("nics titsys")
-  return shortUrlResponse?.link
+  
+  return shortUrlResponse?.link 
+  
+  
 }
 
 // builder('https://www.fanfiction.net/s/14471872/1/Harry-Potter-The-Forbidden-Magic-Legend-Begins-with-Him')

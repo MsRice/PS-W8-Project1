@@ -33,7 +33,10 @@ export async function shortenUrl(longUrl) {
 }
 export async function builder(long_url) {
     const shortUrlResponse = await shortenUrl(long_url);
-    console.log("nics titsys");
+    // if(shortUrlResponse?.description){
+    //   console.log(shortUrlResponse?message)
+    //   console.log("polin")
+    // }
     return shortUrlResponse?.link;
 }
 // builder('https://www.fanfiction.net/s/14471872/1/Harry-Potter-The-Forbidden-Magic-Legend-Begins-with-Him')
